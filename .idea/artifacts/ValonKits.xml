@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ValonKits">
+    <output-path>$PROJECT_DIR$/out/artifacts/ValonKits</output-path>
+    <root id="archive" name="ValonKits.jar">
+      <element id="module-output" name="ValonKits" />
+      <element id="file-copy" path="$PROJECT_DIR$/../FlamePaper_3.jar" />
+    </root>
+  </artifact>
+</component>

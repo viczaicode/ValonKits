@@ -1,0 +1,68 @@
+kitek:
+  Alap:
+    szett:
+      sisak:
+        targy: DIAMOND_HELMET
+        nev: "&6Sisak"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+      mellvert:
+        targy: DIAMOND_CHESTPLATE
+        nev: "&6Mellvért"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+      nadrag:
+        targy: DIAMOND_LEGGINGS
+        nev: "&6Lábszárvédő"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+      csizma:
+        targy: DIAMOND_BOOTS
+        nev: "&6Csizma"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+    itemek:
+      0:
+        targy: DIAMOND_SWORD
+        nev: "&6Kard"
+        encsantok:
+          DAMAGE_ALL: 3
+          DURABILITY: 2
+      1:
+        targy: ENDER_PEARL
+        mennyiseg: 16
+      2:
+        targy: DIAMOND_HELMET
+        nev: "&6Sisak"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+      3:
+        targy: DIAMOND_CHESTPLATE
+        nev: "&6Mellvért"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+      4:
+        targy: DIAMOND_LEGGINGS
+        nev: "&6Lábszárvédő"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+      5:
+        targy: DIAMOND_BOOTS
+        nev: "&6Csizma"
+        encsantok:
+          PROTECTION_ENVIRONMENTAL: 7
+          DURABILITY: 2
+    effektek:
+      - type: SPEED
+        duration: 6000
+        amplifier: 1
+      - type: INCREASE_DAMAGE
+        duration: 600
+        amplifier: 2

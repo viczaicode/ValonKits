@@ -1,0 +1,15 @@
+name: ValonKits
+version: 1.0
+main: main.java.KitPlugin
+description: Easadasff.
+author: viczaicode
+commands:
+  kit:
+    description: Kiteket ad a játékosoknak.
+    usage: /<command> <kitName>
+    permission: kitplugin.use
+    permission-message: Nincs jogosultságod a parancs használatához!
+permissions:
+  kitplugin.use:
+    description: Engedély a kit parancs használatára.
+    default: true
