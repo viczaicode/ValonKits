@@ -41,14 +41,18 @@ public  class KitPlugin  extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(ChatColor.RED + "Ezt a parancsot csak játékosok használhatják.");
+            String uzenet = config.getString("CsakJatekosok");
+            // sender.sendMessage(ChatColor.RED + "Ezt a parancsot csak játékosok használhatják."); uj commit: configba lehet editelni mit irjon ki!! Egy sorral feljebb
+            sender.sendMessage(uzenet);
             return true;
         }
 
         Player player = (Player) sender;
 
         if (args.length == 0) {
-            player.sendMessage(ChatColor.RED + "Használat: /kit <kit>");
+            String uzenet = config.getString("KitLista");
+            //player.sendMessage(ChatColor.RED + "Használat: /kit <kit>"); uj commit: configba lehet editelni mit irjon ki!! Egy sorral feljebb
+            player.sendMessage(ChatColor.GREEN + uzenet + config.getConfigurationSection("kitek").getKeys(false));
             return true;
         }
 
@@ -59,12 +63,14 @@ public  class KitPlugin  extends JavaPlugin {
             if (availableKit.equalsIgnoreCase(kitName)) {
                 kitFound = true;
                 giveKit(player, kits.get(availableKit));
-                player.sendMessage(ChatColor.GREEN + "Megkaptad ezt a kitet: " + availableKit);
+                String uzenet = config.getString("KitLehivas");
+                player.sendMessage(ChatColor.GREEN + uzenet + availableKit);
                 break;
             }
         }
         if (!kitFound) {
-            player.sendMessage(ChatColor.RED + "Ilyen kit nem található: " + kitName);
+            String uzenet = config.getString("KitNemTalalhato");
+            player.sendMessage(ChatColor.RED + uzenet + kitName);
         }
         return true;
     }

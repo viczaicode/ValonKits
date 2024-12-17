@@ -1,3 +1,8 @@
+KitLista: "Elérhető kitek: "
+CsakJatekosok: "Ezt a parancsot csak játékosok használhatják."
+KitLehivas: "Sikeresen lehívtad ezt a kitet: "
+KitNemTalalhato: "Ilyen kit nem található: "
+
 kitek:
   Alap:
     szett:
